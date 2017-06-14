@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Trabajo Final</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html"><img id="cabeza" src="img/people2.png" ></a>
+        <div id="logos">
+        <a href="#"><img src="img/facebook.png" ></a>
+        <a href="#"><img src="img/msg.png"></a>
+        <!--a href="#"><img src="images/skype2.jpg"></a-->
+        </div>  
+      </div>
+    </header>
+    <nav id="menu">
+      <ul class="container">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ejemplo_canvas.html">Ejemplo Canvas</a></li>
+        <li><a href="ejemplo_estilos.html">Ejemplo Hoja de Estilos</a></li>
+        <li><a href="ejemplos_formulario.html">Ejemplo Formulario</a></li>
+        <li><a href="ejemplos_Video.html">Ejemplo Video</a></li>
+      </ul>
+    </nav>
+    <br>
+    <section class="container" id="cuerpo">
+      <canvas id="canvasGlowing" width="800" height="400"> El navegador no admite canvas</canvas>  
+    </section>
+    <br>
+    <footer id="pie">
+      &copy Derechos Reservados a Gustavo Sanchez Portocarrero &copy
+    </footer>
+  </body>
+<script>
+ var canvas = document.getElementById('canvasGlowing');
+ var context = canvas.getContext('2d');
+ var lastX = context.canvas.width * Math.random();
+ var lastY = context.canvas.height * Math.random();
+ var hue = 0;
+ function line() {
+   context.save();
+   context.translate(context.canvas.width/2, context.canvas.height/2);
+   context.scale(0.9, 0.9);
+   context.translate(-context.canvas.width/2, -context.canvas.height/2);
+   context.beginPath();
+   context.lineWidth = 5 + Math.random() * 10;
+   context.moveTo(lastX, lastY);
+   lastX = context.canvas.width * Math.random();
+   lastY = context.canvas.height * Math.random();
+   context.bezierCurveTo(context.canvas.width * Math.random(),
+                         context.canvas.height * Math.random(),
+                         context.canvas.width * Math.random(),
+                         context.canvas.height * Math.random(),
+                         lastX, lastY);
+ 
+   hue = hue + 10 * Math.random();
+   context.strokeStyle = 'hsl(' + hue + ', 50%, 50%)';
+   context.shadowColor = 'white';
+   context.shadowBlur = 10;
+   context.stroke();
+   context.restore();
+ }
+ setInterval(line, 150);
+ 
+ function blank() {
+   context.fillStyle = 'rgba(0,0,0,0.1)';
+   context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+ }
+ setInterval(blank, 140);
+</script>
+</html>

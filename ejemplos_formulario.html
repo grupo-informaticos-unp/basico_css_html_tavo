@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/favicon.ico">
+		<title>Trabajo Final</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<script type="text/javascript" src="js/validacion.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="index.html"><img id="cabeza" src="img/people2.png" ></a>
+				<div id="logos">
+				<a href="#"><img src="img/facebook.png" ></a>
+				<a href="#"><img src="img/msg.png"></a>
+				<!--a href="#"><img src="images/skype2.jpg"></a-->
+				</div>	
+			</div>
+		</header>
+		<nav id="menu">
+			<ul class="container">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="ejemplo_canvas.html">Ejemplo Canvas</a></li>
+				<li><a href="ejemplo_estilos.html">Ejemplo Hoja de Estilos</a></li>
+				<li><a href="ejemplos_formulario.html">Ejemplo Formulario</a></li>
+				<li><a href="ejemplos_Video.html">Ejemplo Video</a></li>
+			</ul>
+		</nav>
+		<br>
+		<section class="container" id="cuerpo">
+			<h2> Envio de Datos a Un Correo Electronico :) </h2>
+			<form  name="miFormulario" onsubmit="return Valida(this);" action="gtavo427@mail.com" >
+	            <label class="letra">Nombre:</label> 
+	            <input type="text" name="campo1"><br>
+	            <label class="letra">Apellido:</label> <input type="text" name="campo2"><br>
+	            <label class="letra">Código Postal:</label> <input type="text" name="cpostal"><br>
+	            <label class="letra">DNI:</label> <input type="text" name="dni"><br>
+	            <label class="letra">Email:</label> <input type="text" name="email"><br>
+	            <br>
+	            <input class="btn" type="submit" value="Enviar" name="enviar">
+        	</form>
+		</section>
+		<br>
+		<footer id="pie">
+			&copy Derechos Reservados a Gustavo Sanchez Portocarrero &copy
+		</footer>
+	</body>
+</html>

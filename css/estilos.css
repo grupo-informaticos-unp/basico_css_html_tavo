@@ -1,0 +1,173 @@
+body{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	background-color: rgb(223, 223, 223);
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+	height: auto;
+	line-height: 180%;
+}
+
+/*CLearfix*/
+.clearfix:before, .clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix{
+	*zoom:1;
+}
+/*estilos de la imagen de cabecera*/
+#cabeza{
+	margin-left: 0px;
+}
+/*Logos de la cabezera*/
+#logos{
+	float: right;
+	margin-right: 30px;
+	margin-top: 25px;
+	letter-spacing: 0.7em;
+	border-radius: 2px;
+}
+
+/********************************
+Realizacion del Menu
+**********************************/
+#menu{
+	height: 40px;
+	width: 960px;
+	margin: 0 auto;
+	background-color: rgb(0, 64, 125);
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#menu ul{
+	padding: 0;
+	height: 40px;
+	width: 800px;
+}
+#menu li{
+	display: inline;
+	float: left;
+}
+#menu a{
+	border-right: 1px solid #516979;
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow: 1px 1px 0 #283744;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#menu li:last-child a{
+	border-right: 0;
+}
+#menu a:hover, #menu a:active{
+	background-color: #e74c3c;
+}
+
+/*Slider de imagenes*/
+#slideshow{
+	width: 100%;
+	height: auto;
+}
+.slide{
+	width: 100%;
+	height: auto;
+}
+/*Imagen flotante*/
+#imagen-flotante{
+	float: right;
+}
+/*Cuerpo de la Página*/
+#col-01{
+	width: 30%;
+	float: left;
+}
+#col-02{
+	width: 30%;
+	float: left;
+	padding-left: 50px;
+}
+#col-03{
+	width: 30%;
+	float: right;
+}
+#col-01, #col-02, #col-03{
+	text-align: center;
+	color: #404040;
+	border-radius: 5px;
+	text-align: justify;
+	font-style: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	/*background-color: #19366C;*/
+}
+/*Estilos de los botones de avanzar*/
+.avanza{
+	float: right;
+	padding-right: 20px;
+}
+/*estilos del cuerpo*/
+#cuerpo h2{
+	color: #19366C;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+/*Datos de la empresa*/
+#datos_empresa{
+	background-color: #D4D4D0;
+	padding-left: 15%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  	font-size: 12px;
+}
+/*Pie de Pagina*/
+#pie{
+	height:20px;
+  	background-color:rgb(0, 64, 125);
+  	color:#fff;
+  	font-size: 15px;
+  	letter-spacing: 2px;
+  	text-align: center;
+  	padding-top:5px;
+  	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  	font-size: 12px;
+}
+
+/*formato al texto*/
+.texto{
+	  font-size: 12px;
+  color: #404040;
+  line-height: 15px;
+}
+/*centrar el slider*/
+.slider-centrar{
+	padding-left: 10em;
+}
+/*cuerpo*/
+#cuerpo{
+	text-align: center;
+}
+/*Letras del formulario*/
+.letra{
+	font-family: arial;
+	font-size: 1em;
+	color: #19366C;
+	font-weight: bold;
+}
+.btn{
+	font-size: 1em;
+	color: #fff;
+	background-color: #19366c;
+	font-weight: bold;
+}
